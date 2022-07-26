@@ -1,0 +1,122 @@
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.portfolio span:nth-of-type(1) {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.portfolio span:nth-of-type(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.portfolio .swiper {
+    overflow: visible!important;
+}
+.porfolio-slider {
+    margin-top: 3rem;
+    width: 100%;
+}
+.porfolio-slider .swiper-slide {
+    width: 20rem;
+}
+.portfolio img {
+    width: 19rem;
+    filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+    border-radius: 19px;
+}
+.p-slider-name {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--gray);
+    font-size: 28px;
+    font-weight: bold;
+}
+.p-slider-link {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--orange);
+    display: block;
+
+}
+.p-slider-text {
+    text-align: center;
+    margin: 0px 50px;
+}
+
+.portfolio .porfolio-slider .sliderr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 991px) {
+    .portfolio img {
+        width: 14rem;
+    }
+    .p-slider-text {
+        margin: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio {
+        margin-top: -30px;
+        height: 50px;
+    }
+    .portfolio img {
+        width: 10rem;
+    }
+    .p-slider-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio {
+        margin-top: 40px;
+        height: 156px;
+    }
+    .p-slider-text {
+        display: none;
+    }
+    .p-slider-name {
+        font-size: 18px;
+    }
+    .p-slider-link {
+        font-size: 14px;
+    }
+    .portfolio .porfolio-slider .sliderr {
+        max-width: 140px;
+        width: 140px;
+    }
+    
+    .portfolio img {
+        width: 6.5rem;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio {
+        margin-top: 0;
+        height: 30vh;
+    }
+    .portfolio img {
+        width: 5rem;
+        border-radius: 5px;
+    }
+    .portfolio span:nth-of-type(1) {
+        font-size: 1.5rem;
+    }
+    .portfolio span:nth-of-type(2) {
+        font-size: 1.5rem;
+    }
+}
